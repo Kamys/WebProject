@@ -1,0 +1,105 @@
+﻿@model dynamic
+
+@{
+    ViewBag.Title = "title";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div id="main">
+    <div class="cl">&nbsp;</div>
+    <div id="content">
+        <div id="slider" class="box">
+            <div id="slider-holder">
+                <ul>
+                    <li><a href="#"><img src="css/images/side1.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/images/slide2.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/images/slide3.jpg" alt="" /></a></li>
+                    <li><a href="#"><img src="css/images/slide4.jpg" alt="" /></a></li>
+                </ul>
+            </div>
+            <div id="slider-nav">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+            </div>
+        </div>
+        <div class="products">
+            <div class="cl">&nbsp;</div>
+            <ul>
+                <li>
+                    <a href="#"><img src="css/images/big11.jpg" alt="" /></a>
+                    <div class="product-info">
+                        <h3>NOKIA 6</h3>
+                        <div class="product-desc">
+                            <p>Новинка<br /></p>
+                            <strong class="price">$58.99</strong>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+                    <div class="product-info">
+                        <h3>IPHONE 7</h3>
+                        <div class="product-desc">
+                            <p>Новинка<br /></p>
+                            <strong class="price">$58.99</strong>
+                        </div>
+                    </div>
+                </li>
+                <li class="last">
+                    <a href="#"><img src="css/images/big12.png" alt="" /></a>
+                    <div class="product-info">
+                        <h3>SAMSUNG GALAXY S8</h3>
+                        <div class="product-desc">
+                            <p>Новинка<br /></p>
+                            <strong class="price">$58.99</strong>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="cl">&nbsp;</div>
+        </div>
+    </div>
+    <div id="sidebar">
+        <div class="box search">
+            <h2>Поиск <span></span></h2>
+            <div class="box-content">
+                <form action="" method="post">
+                    <label>Ключевое слово</label>
+                    <input type="text" class="field" />
+						
+                    <label>Категория</label>
+                    <select class="field">
+                        <option value="">-- Выбрать категорию --</option>
+                    </select>
+						
+                    <div class="inline-field">
+                        <label>Цена от</label>
+                        <select class="field small-field">
+                            <option value="">$10</option>
+                        </select>
+                        <label>до:</label>
+                        <select class="field small-field">
+                            <option value="">$50</option>
+                        </select>
+                    </div>
+						
+                    <input type="submit" class="search-submit" value="Поиск" />
+
+                </form>
+            </div>
+        </div>
+        <div class="box categories">
+            <h2>Категория <span></span></h2>
+            <div class="box-content">
+                <ul>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="cl">&nbsp;</div>
+</div>
